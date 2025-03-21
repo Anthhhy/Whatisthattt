@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>
+      What is that ?
+    </title>
+ 
+    <link rel="stylesheet" href="Whatisthat.css">
+    
+
+
+  </head>
+
+  <body>
+    <div class="div1">
+      <p class="t1">
+        Will you go out with me ?
+      </p>
+    </div>
+
+  <div class="div2">
+    <img class="Cat-flowers" src="Cat flowers.jpg">
+  </div>
+
+  <div class="div3">
+    <button class="Yes-button" id="Yes-buttonn" onclick="nextpage()">
+      Yes
+    </button>
+
+  
+    <button class="No-button" id="No-buttonn" onclick="movebutton()" onmouseover="movebutton()">
+      No
+    </button>
+    
+
+    <script> 
+      function nextpage() {
+        window.location.href = "yes.html";
+      }
+
+      function movebutton() {
+       var x = Math.random() * (window.innerWidth - document.getElementById('No-buttonn').offsetWidth) - 85;
+       var y = Math.random() * (window.innerHeight - document.getElementById('No-buttonn').offsetHeight) - 48;
+        document.getElementById('No-buttonn').style.left = `${x}px`;
+        document.getElementById('No-buttonn').style.top = `${y}px`;
+      }
+      
+    </script>
+  </div>
+    
+  
+</body>
+
+</html>
+
+
+
+   
